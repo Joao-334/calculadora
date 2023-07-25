@@ -1,0 +1,63 @@
+@import '../../_var.scss';
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2.5rem 1.25rem;
+    padding: 0.75rem 1.25rem;
+    width: 30%;
+    height: auto;
+    background-color: $cinza-claro;
+    border-radius: 10px;
+
+    &__label {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem;
+        border-bottom: 2px solid $azul-cinzento;
+        color: $azul-celeste;
+        font-size: $tamanho-paragrafo;
+        margin: 0.25rem;
+
+        input {
+            border: none;
+            margin: 0.25rem 0.5rem;
+        }
+
+        input::placeholder {
+            color: $azul-cinzento;
+            text-align: center;
+            background-color: $cinza-claro;
+        }
+
+        input:focus {
+            box-shadow: 0 0 0 0;
+            outline: 0;
+            border-bottom: 1px solid $azul-cinzento;
+        }
+    }
+
+    &__button {
+        margin: 1.75rem 0;
+        padding: 2rem;
+        border: 2px solid $azul-celeste;
+        border-radius: 10px;
+        width: 60%;
+        font-size: $tamanho-paragrafo;
+        background-color: $azul-celeste;
+        color: $branco;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+
+    }
+
+    &__button:hover {
+        background-color: $azul-celeste-escuro;
+        border-color: $azul-celeste-escuro;
+        transition: background-color 0.75s ease-in-out;
+
+    }
+}

@@ -1,0 +1,23 @@
+@import '../../_var.scss';
+
+.nav {
+    position: static;
+    width: 100%;
+    background-color: $cor-cabecalho;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    &__image {
+        width: 10%;
+        position: relative;
+        bottom: 0.5rem;
+        right: 1.5rem;
+    }
+
+    &__links {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}

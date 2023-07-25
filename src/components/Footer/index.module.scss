@@ -1,0 +1,23 @@
+@import '../../_var.scss';
+
+.footer {
+
+    height: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: $cinza-claro;
+    color: $azul-cinzento;
+    margin-top: 1rem;
+
+    &__p {
+        
+        font-size: $tamanho-paragrafo;
+    }
+
+    &__h3 {
+        font-size: $tamanho-titulo;
+        margin-bottom: 0.75rem;
+    }
+}
